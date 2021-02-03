@@ -17,7 +17,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
       div.example {
   background-color: lightgrey;
@@ -88,7 +88,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active text-center text-black">
         <img src="6P4UHZBYus0.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-sm-block">
           <h3 >Производитель травмобезопасных рулонных напольных  покрытий из резиновой крошки</h3>
           <div class="fixed-top"></div>
           <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
@@ -124,18 +124,18 @@
       <div class="carousel-item">
         <img src="6P4UHZBYus0.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h3>
-          <p>Производитель травмобезопасных рулонных напольных  покрытий из резиновой крошки
-		  «Rubbermat»</p>
-<p>- Уникальные размеры покрытий</p>
+          <h3>ДОСТАВКА
+          Производитель травмобезопасных рулонных напольных  покрытий из резиновой крошки
+«Rubbermat»
+- Уникальные размеры покрытий
 
-<p>- Контроль качества продукции</p>
+- Контроль качества продукции
 
-<p>- Выгодные условия приобретения</p>
+- Выгодные условия приобретения
 
-<p>- Большой ассортимент палитры</p>
+- Большой ассортимент палитры
 
-<p>- Доставка по всей России</p></h3>
+- Доставка по всей России</h3>
                 </div>
       </div>
       <!--  <div class="container">
@@ -149,7 +149,7 @@
       </div>--> 
       <div class="carousel-item">
         <img src="6P4UHZBYus0.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-sm-block">
           <h3>ДЕТСКИЕ ПЛОЩАДКИ</h3>
                 </div>
       </div>
@@ -1094,7 +1094,7 @@
     <div class="column">   
         <div class="contactimg"><br>
           <h4 class="my-0 font-weight-normal">
-            <a href="tel:+7 (8142) 33 22 11"><img src="phone-call.svg" alt="Fringe"></a><br>           
+            <a href="tel:+7 962 614 90 10"><img src="phone-call.svg" alt="Fringe"></a><br>           
         </div> <br>             
         <div class="contactimg">
           <h4 class="my-0 font-weight-normal">
@@ -1111,7 +1111,7 @@
     </div>
     
     <div class="column">
-      <form action="/action_page.php">
+      <form action="/contact.php">
         <label for="fname">Имя</label>
         <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
         <label for="lname">Номер телефона</label>
@@ -1126,39 +1126,33 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="box">
+  <form id="ajax-contact-form" enctype="multipart/form-data" method="post">
+      <div class="form-group">
+        <label for="nameFF">Имя:</label>
+        <input id="nameFF" name="nameFF" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="contactFF">E-mail:</label>
+        <input id="contactFF" name="contactFF" type="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telFF">Телефон:</label>
+        <input id="telFF" name="telFF" type="tel" required>
+      </div>
+      <div class="form-group">
+        <label for="projectFF">Сообщение</label>
+        <textarea id="projectFF" name="projectFF" cols="40" rows="3"></textarea>
+      </div>
+      <div class="control-file">
+        <label for="fileFF">Прикрепить файл:</label>
+        <input id="fileFF" name="fileFF" type="file">
+      </div>
+      <button class="btn" type="submit" id="submitFF">Отправить сообщение</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="util.js"></script>
 
 
 <footer class="container py-5">
