@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Форма обратной связи</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="//code-ya.jivosite.com/widget/OygZdrJdcB" async></script>
+	<meta charset="utf-8">
+	<title>Отправка форм AJAX</title>
 </head>
 <body>
-	
-
-	<form name="form" action="mail.php" method="post" id="form_message">
-		<h2>Форма обратной связи.</h2>
-		<p> <div class="titles">Ваше имя*</div> <input class="input" name="name" type="text"/> </p>
-		 
-		<p> <div class="titles">Электронная почта*</div> <input class="input" name="email" type="text"/> </p>
-		 
-		<p> <div class="titles">Тема сообщения</div> <input class="input" name="subjects" type="text"/> </p>
-		 
-		<p> <div class="titles">Текст сообщения:</div><textarea name="message" cols="22" rows="5" /></textarea></p>
-		<p><input id="submit" value="Отправить" type="submit" /></p>
+	<form id="form">
+		<input type="text" name="name" placeholder="Ваше имя" required /><br />
+		<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
+		<button>Отправить</button>
 	</form>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="common.js"></script>
 </body>
 </html>
-
